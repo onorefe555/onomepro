@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Sales</title>
+    <link rel="stylesheet" href="gen.css">
+</head>
+<body>
+    <h2 >Genesis File Management Restaurant</h2>
+    <div class="header">
+        <a href="genesis.html" class="current">Food Sales</a>
+        <a href="foodorder.html">Food Order</a>
+        <a href="foodcategory.html">Food Category</a>
+        <a href="../index.html">Logout</a>
+    </div>
+    
+    <section id="resturant_app-date-invoise">
+         <div class="date-invoise">
+               <div class="date-invoise-app">
+                <label for="date">Date</label>
+                <input id="input_date" type="text" placeholder="2013/07/30">
+                <small id="date_error"></small>
+               </div>
+
+               <div class="date-invoise-app">
+                <label for="invoice">Invoice No</label>
+                <input id="input_invoice" type="number" placeholder="00000008">
+                <small id="invoice_error"></small>
+               </div>
+             
+               <div class="date-invoise-app">
+                <label for="button">Add New</label>
+                <input type="button" value="CmdNew" id="btn">
+                
+               </div>
+         </div>
+    </section>
+
+     <section id="message">
+            <div class="error-mes-container">
+                <div class="error">
+                    <ul id="date_li">
+    
+                    </ul>
+                </div>
+    
+                <div class="error">
+                    <ul id="invoice_li">
+    
+                    </ul>
+                </div>
+            </div>
+     </section>
+
+     <section id="stock_category-container">
+        <div class="stock_category-name">
+              <div class="stock_category-name-control">
+                     <div class="category-product-id">
+                            <div class="category">
+                                  <label for="category">Category ID</label>
+                                  <input type="text" id="category_id" >
+                            </div>
+
+                            <div class="product_id">
+                                  <label for="category">Product ID</label>
+                                  <input type="text" id="product_id">
+                                  <button id="product_category_btn">Add Product</button>
+                            </div>
+                     </div>
+              </div>
+
+              <div class="stock_category-name-control">
+                            <div class="categoryname-productname">
+                                <div class="category_name">
+                                     <label for="category">Category Name</label>
+                                      <input type="text" id="category_name" >
+                                </div>
+
+                                <div class="product_name">
+                                     <label for="product_name">Product Name</label>
+                                     <input type="text" id="product_name">
+                                </div>
+                            </div>
+              </div>
+                 
+              <div class="stock_category-name-control">
+                     <div class="availablestock-limitprice">
+                         <div class="available-stock">
+                             <label for="categoryname" class="category">Available Stock</label>
+                             <input type="text" id="availabe_stock" >
+                       </div>
+
+                       <div class="availablestock-limit_price">
+                             <label for="category">Unit Price</label>
+                             <input type="text" id="unit_price">
+                       </div>
+                     </div>
+              </div>
+        </div>
+ </section>
+<!-- Error message for section two -->
+<section id="stock_category-container_error_two">
+    <div class="stock_category-name">
+        <div class="stock_category-name-control">
+               <div class="category-product-id">
+                      <div class="category">
+                            <ul class="category_id_list">
+
+                            </ul>
+                      </div>
+
+                      <div class="product_id">
+                            <ul id="product_id_list">
+
+                            </ul>
+                      </div>
+               </div>
+        </div>
+
+        <div class="stock_category-name-control">
+                      <div class="categoryname-productname">
+                          <div class="category_name">
+                               <ul id="category_name_list">
+
+                               </ul>
+                          </div>
+
+                          <div class="product_name">
+                               <ul id="product_name_list">
+
+                               </ul>
+                          </div>
+                      </div>
+        </div>
+           
+        <div class="stock_category-name-control">
+               <div class="availablestock-limitprice">
+                   <div class="available-stock">
+                       <ul id="available_stock_list">
+                           
+                       </ul>
+                 </div>
+
+                 <div class="availablestock-limit_price">
+                       <ul id="untprice_list"></ul>
+                 </div>
+               </div>
+        </div>
+  </div>
+</section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
